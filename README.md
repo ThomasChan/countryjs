@@ -10,7 +10,7 @@
 [![Test Coverage](https://codeclimate.com/github/therebelrobot/countryjs/badges/coverage.svg)](https://codeclimate.com/github/therebelrobot/countryjs)
 [![JS.ORG](https://img.shields.io/badge/js.org-country-ffb400.svg?style=flat)](http://js.org)
 
-A Node.js module for returning data about countries, ISO info and states/provinces within them.
+A js module for returning data about countries, ISO info and states/provinces within them.
 
 ## Table of Contents
 
@@ -52,25 +52,13 @@ A Node.js module for returning data about countries, ISO info and states/provinc
 ## Install
 
 ```bash
-npm install countryjs
+npm install thomaschan/countryjs
 ```
 
-### Using with browserify
-
-To run in-browser, you'll need the `bulkify` transform for `browserify`, as it pairs with `bulk-require`, to staticly resolve each country JSON.
+### Using in browser
 
 ```
-npm install bulkify
-```
-
-```
-var bulkify = require('bulkify')
-var bundle = browserify({
-  entries: [...],
-})
-.transform(bulkify, {
-  global: true
-})
+import country from 'countryjs';
 ```
 
 ## Usage
@@ -455,7 +443,7 @@ Special thanks to johan for his work on [johan/world.geo.json](https://github.co
 
 *This project adheres to [Javascript Standard style](https://github.com/feross/standard)*
 
-To contribute code to this module, please follow this workflow: 
+To contribute code to this module, please follow this workflow:
 
 1. fork the repo
 2. make sure to install dev dependencies using
@@ -540,7 +528,7 @@ All notable changes to this project will be documented in this file.
 ## Disclaimer
 
 This is being maintained in the contributor's free time, and as such, may contain minor errors in regards to some countries.
-Most of the information included in this library is what is listed on Wikipedia. If there is an error, 
+Most of the information included in this library is what is listed on Wikipedia. If there is an error,
 please let me know and I will do my best to correct it.
 
 ## License (ISC)

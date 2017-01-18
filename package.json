@@ -12,7 +12,7 @@
     "Loris Guignard <loris.guignard@gmail.com> [@loris]",
     "Brandon Copley <copley.brandon@gmail.com> [@brandoncopley]"
   ],
-  "repository": "progressclaim/countryjs",
+  "repository": "thomaschan/countryjs",
   "engines": [
     "node"
   ],
@@ -34,7 +34,6 @@
   },
   "homepage": "https://github.com/therebelrobot/countryjs",
   "dependencies": {
-    "bulk-require": "^1.0.0",
     "lodash": "^4.17.2",
     "minimatch": "^3.0.3"
   },
